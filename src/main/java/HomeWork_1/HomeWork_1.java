@@ -103,6 +103,48 @@ public class HomeWork_1 {
     // индексы таких элементов равны, то есть [0][0], [1][1], [2][2], …, [n][n];
     // * Также заполнить элементы побочной диагонали
     // */
+    private static void mainArray(int[][] array) {   //заполнение массива по обеим диагоналям
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0, x = array[i].length - 1;  j < array[i].length; j++, x--) {
+                if (i == j || i == x){
+                    array[i][j] = 1;
+                }else{
+                    array[i][j] = 0;
+                }
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // private static void mainArray(int[][] array) {   //заполнение массива по главной диагонали
+    //     for (int i = 0; i < array.length; i++) {
+    //         for (int j = 0; j < array.length; j++) {
+    //             if (i == j){
+    //                 array[i][j] = 1;
+    //             }else{
+    //                 array[i][j] = 0;
+    //             }
+    //             System.out.print(array[i][j] + " ");
+    //         }
+    //         System.out.println();
+    //     }
+    // }
+
+
+    // private static void mainArray(int[][] array) {   //заполнение массива по побочной диагонали
+    //     for (int i = 0; i < array.length; i++) {
+    //         for (int j = 0, x = array[i].length - 1;  j < array[i].length; j++, x--) {
+    //             if (i == x){
+    //                 array[i][j] = 1;
+    //             }else{
+    //                 array[i][j] = 0;
+    //             }
+    //             System.out.print(array[i][j] + " ");
+    //         }
+    //         System.out.println();
+    //     }
+    // }
 
 
 }
