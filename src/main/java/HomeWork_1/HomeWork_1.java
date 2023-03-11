@@ -16,6 +16,13 @@ public class HomeWork_1 {
         integerArray(replaceValues);
         int[] reloadValues = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
         diffIntegerArray(reloadValues);
+
+
+        int[][] array = new int[4][4];
+        mainArray(array);
+
+        //     // int[][] array = new int[4][4]; // [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, x], [0, 0, 0, 1]]
+        //     // int x = array[2][3];
     }
 
     // 1. Написать метод, принимающий на вход два целых числа и проверяющий,
