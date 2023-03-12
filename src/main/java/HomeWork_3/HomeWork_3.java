@@ -53,17 +53,17 @@ public class HomeWork_3 {
             // System.out.print(string.getClass() + "  ");
             flag = string.matches("-?\\d+(\\.\\d+)?"); //проверка строки, число или нет,возвращает
                                                               // значение false или true.
-            //System.out.println(flag);
+            //System.out.println(flag); // проверка значения флага
             if (flag == true) {      // если строка цисловая , то.....
                 // System.out.print(string + "  ");
                 list.remove(string);   //  удаляем из массива строк(list) значение в (string)
                 i--;            //  при удалении идет смещение индексов, -- дает возврат по сммещеию
                 //System.out.println(list);
             }else {
-                //System.out.println(list);
+                //System.out.println(list); // промежуточная проверка
             }
             i++;
         }
-        System.out.println(list);
+        System.out.println(list); // финальный вывод
     }
 }
