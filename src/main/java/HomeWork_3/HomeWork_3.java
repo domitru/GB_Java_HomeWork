@@ -4,41 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
-
 public class HomeWork_3 {
 
     public static void main(String[] args) {
-        //    1. Дан список ArrayList<Integer> целых чисел. Удалить из него нечетные числа.
-        //System.out.println(randomaiser());
-        //sortedArrayList(randomaiser());  // 1-е задание, передает рандомно заполненый список.
+
+        // System.out.println(randomaiser());
+        sortedArrayList(randomaiser());  // 1-е задание, передает рандомно заполненый список.
 
         ArrayList<String> listDifferent = new ArrayList<>(List.of("!", "Hello", "4", "string", "s", "5", "10", "-12", "my_value"));
-        delNumList(listDifferent);
+        delNumList(listDifferent);     // 2-е задание
     }
-//    private static ArrayList<Integer> randomaiser(){
-//        Random proizvol = new Random();
-//        ArrayList<Integer> list = new ArrayList<Integer>();
-//        for (int i = 0; i < 10; i++) {
-//            int num = proizvol.nextInt(-20, 20);
-//            list.add(num);
-//        }
-//        return list;
-//    }
-//    private static void sortedArrayList (ArrayList<Integer> list_2){
-//        System.out.println(list_2);
-//
-//        int i = 0;
-//        while (i < list_2.size()){
-//            if(list_2.get(i) % 2 != 0){
-//                list_2.remove(i);
-//            }else{
-//                i++;
-//            }
-//        }
-//        System.out.println(list_2);
-//
-//    }
+    private static ArrayList<Integer> randomaiser(){
+        Random proizvol = new Random();
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            int num = proizvol.nextInt(-20, 20);
+            list.add(num);
+        }
+        return list;
+    }
+    private static void sortedArrayList (ArrayList<Integer> list_2){
+//  1. Дан список ArrayList<Integer> целых чисел. Удалить из него нечетные числа.
+
+        System.out.println(list_2);
+
+        int i = 0;
+        while (i < list_2.size()){
+            if(list_2.get(i) % 2 != 0){
+                list_2.remove(i);
+            }else{
+                i++;
+            }
+        }
+        System.out.println(list_2);
+
+    }
+
 
     private static void delNumList(ArrayList<String> list) {
 //  2. Дан список ArrayList<String>. Удалить из него все строки,которые являются числами
