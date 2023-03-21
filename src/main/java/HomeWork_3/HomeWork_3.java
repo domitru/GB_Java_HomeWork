@@ -42,29 +42,48 @@ public class HomeWork_3 {
 
 
     private static void delNumList(ArrayList<String> list) {
-//  2. Дан список ArrayList<String>. Удалить из него все строки,которые являются числами
-//  Пример: ArrayList<String> list = new ArrayList<>(List.of("string", "s", "5", "10", "-12", "my_value"));
-//  -->> ["string", "s", "my_value"]
         System.out.println(list);  // Печать полученного массива строк
         int i = 0;
         boolean flag = false ;
-        while (i < list.size()){  // цикл по длине массива
-            String string = list.get(i);  // Выдергиваем по индексу i из массива строку, кладем в string
-            // System.out.print(string + "  ");
-            // System.out.print(string.getClass() + "  ");
-            flag = string.matches("-?\\d+(\\.\\d+)?"); //проверка строки, число или нет,возвращает
-                                                              // значение false или true.
-            //System.out.println(flag); // проверка значения флага
-            if (flag == true) {      // если строка цисловая , то.....
-                // System.out.print(string + "  ");
-                list.remove(string);   //  удаляем из массива строк(list) значение в (string)
-                i--;            //  при удалении идет смещение индексов, -- дает возврат по сммещеию
-                //System.out.println(list);
+        while (i < list.size()){
+            String string = list.get(i);
+            flag = string.matches("-?\\d+(\\.\\d+)?");
+            if (flag == true) {
+                list.remove(string);
+                i--;
             }else {
-                //System.out.println(list); // промежуточная проверка
             }
             i++;
         }
         System.out.println(list); // финальный вывод
     }
 }
+
+
+//    private static void delNumList(ArrayList<String> list) {
+////  2. Дан список ArrayList<String>. Удалить из него все строки,которые являются числами
+////  Пример: ArrayList<String> list = new ArrayList<>(List.of("string", "s", "5", "10", "-12", "my_value"));
+////  -->> ["string", "s", "my_value"]
+//        System.out.println(list);  // Печать полученного массива строк
+//        int i = 0;
+//        boolean flag = false ;
+//        while (i < list.size()){  // цикл по длине массива
+//            String string = list.get(i);  // Выдергиваем по индексу i из массива строку, кладем в string
+//            // System.out.print(string + "  ");
+//            // System.out.print(string.getClass() + "  ");
+//            flag = string.matches("-?\\d+(\\.\\d+)?"); //проверка строки, число или нет,возвращает
+//            // значение false или true.
+//            //System.out.println(flag); // проверка значения флага
+//            if (flag == true) {      // если строка цисловая , то.....
+//                // System.out.print(string + "  ");
+//                list.remove(string);   //  удаляем из массива строк(list) значение в (string)
+//                i--;            //  при удалении идет смещение индексов, -- дает возврат по сммещеию
+//                //System.out.println(list);
+//            }else {
+//                //System.out.println(list); // промежуточная проверка
+//            }
+//            i++;
+//        }
+//        System.out.println(list); // финальный вывод
+//    }
+//}
