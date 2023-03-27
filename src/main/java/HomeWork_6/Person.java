@@ -49,4 +49,8 @@ public class Person {
         }
         return res;
     }
+
+    public String getCity() {
+        return city;
+    }
 }
