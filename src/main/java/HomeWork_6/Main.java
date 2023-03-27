@@ -1,5 +1,20 @@
 package HomeWork_6;
 
+    /*
+    Создать класс Person.
+У класса должны быть поля:
+1. Имя (String)
+2. Фамилия (String)
+3. Возраст (продумать тип)
+4. Пол
+5*. Придумать свои собственные поля
+Для этого класса
+1. Реализовать методы toString, equals и hashCode.
+2*. Придумать собственные методы и реализовать их
+В мейне создать массив Person'ов. В цикле отобрать Person'ов старше 20 лет и вывести их на экран.
+     */
+
+
 import java.util.ArrayList;
 
 public class Main {
@@ -25,12 +40,6 @@ public class Main {
         persons.add(person7);
         persons.add(person8);
 
-        // for (String[] work : workers) {
-        //     if (Integer.parseInt(work[2]) > 20) {
-        //         Person staff = new Person(work[0], work[1], work[2], work[3], work[4], work[5]);
-        //         System.out.println(staff);
-        //     }
-        // }
 
         for (Person work : persons) {
             if (Integer.parseInt(work.age) > 20) {
@@ -39,9 +48,9 @@ public class Main {
 
         }
 
-       // System.out.println(person1.name.equals(person3.name));
+        System.out.println(person1.name.equals(person8.name));
         System.out.println(person1.surname.hashCode());
-        System.out.println(person4.surname.hashCode());
+        System.out.println(person6.surname.hashCode());
 
     }
 

@@ -3,22 +3,6 @@ package HomeWork_6;
 import java.sql.Array;
 
 public class Person {
-    /*
-     * Создать класс Person.
-     * У класса должны быть поля:
-     * 1. Имя (String)
-     * 2. Фамилия (String)
-     * 3. Возраст (продумать тип)
-     * 4. Пол
-     * 5*. Придумать свои собственные поля
-     *
-     * Для этого класса
-     * 1. Реализовать методы toString, equals и hashCode.
-     * 2*. Придумать собственные методы и реализовать их
-     *
-     * В мейне создать массив Person'ов. В цикле отобрать Person'ов старше 20 лет и
-     * вывести их на экран.
-     */
 
     String name;
     String surname;
@@ -38,12 +22,12 @@ public class Person {
         this.city = City;
     }
 
-    @Override
+   // @Override
     public String toString() {
         return String.format("%s %s %s %s %s %s", surname, name, age, gender, profession, city);
     }
 
-    @Override
+    //@Override
     public boolean equals(Object arg) {
         if (arg == null)
             return false;
@@ -56,7 +40,7 @@ public class Person {
                 && city.equals(anotherPerson.city);
     }
 
-    @Override
+   // @Override
     public int hashCode() {
         Object[] m = { name, surname, age, gender, profession, city };
         int res = 1;
