@@ -1,18 +1,14 @@
 package TestHW_04_Final;
 
-public class ShitDerevo extends Zashita{
+public class ShitDerevo implements Zashita{
     @Override
-    public int zashitaOtUrona() {
+    public int protect() {
         return 15;
     }
 
     @Override
-    public String vidZashiti() {
-        return " Щит ";
+    public int ves() {
+        return 4;
     }
 
-    @Override
-    public String toString() {
-        return "Щит деревянный - " + super.toString();
-    }
 }

@@ -1,5 +1,5 @@
 package TestHW_04_Final;
 
-public interface UronOtOrugia {
+public interface Weapon {
     public int uron();
 }

@@ -2,10 +2,10 @@ package TestHW_04_Final;
 
 import java.util.Random;
 
-public abstract class Warrior<T extends UronOtOrugia, S extends Zashita> extends Chelovek{
+public abstract class Warrior<T extends Weapon, S extends Zashita> extends Chelovek{
     protected static Random random = new Random();
-    private T uron;
-    private S zashita;
+    T uron;
+    S zashita;
 
 
     public Warrior(String name, int hp, T uron, S zashita) {

@@ -1,6 +1,6 @@
 package TestHW_04_Final;
 
-public abstract class HolodnoeOruzhie implements UronOtOrugia {
+public abstract class HolodnoeOruzhie implements Weapon {
 
     public abstract int dlinaOruzhia();
 

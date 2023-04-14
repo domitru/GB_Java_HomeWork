@@ -4,7 +4,7 @@ public class Spartanec extends Warrior<MechKorotkii, ShitDerevo>{
     private int speed;
     public Spartanec(String name,int hp, MechKorotkii uron, ShitDerevo zashita) {
         super(name, hp, uron, zashita);
-        this.speed = random.nextInt(4, 12);
+        this.speed = random.nextInt(4, 12) - zashita.ves();
     }
 
 

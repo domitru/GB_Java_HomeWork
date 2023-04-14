@@ -1,19 +1,15 @@
 package TestHW_04_Final;
 
-public class ShitMetall extends Zashita{
+public class ShitMetall implements Zashita{
 
     @Override
-    public int zashitaOtUrona() {
+    public int protect() {
         return 60;
     }
 
     @Override
-    public String vidZashiti() {
-        return "Щит железный";
+    public int ves() {
+        return 10;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

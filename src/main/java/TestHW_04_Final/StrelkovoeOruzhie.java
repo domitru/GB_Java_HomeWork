@@ -1,12 +1,13 @@
 package TestHW_04_Final;
 
 
-public abstract class StrelkovoeOruzhie<T extends Distanzia> implements UronOtOrugia {
+public abstract class StrelkovoeOruzhie extends Distanzia implements Weapon {
     public abstract String vidStrelkovoeOruzhia();
     public  int dalnostStrelbi;
 
     public StrelkovoeOruzhie(int dalnostStrelbi) {
-        this.dalnostStrelbi = dalnostStrelbi;
+
+        super(dalnostStrelbi);
     }
 
     public int getDalnostStrelbi() {

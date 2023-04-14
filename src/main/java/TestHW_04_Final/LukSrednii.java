@@ -1,8 +1,10 @@
 package TestHW_04_Final;
 
-public class Luk extends StrelkovoeOruzhie{
+import java.util.Random;
 
-    public Luk(int dalnostStrelbi) {
+public class LukSrednii extends StrelkovoeOruzhie{
+
+    public LukSrednii(int dalnostStrelbi) {
         super(dalnostStrelbi);
     }
 
@@ -13,7 +15,7 @@ public class Luk extends StrelkovoeOruzhie{
 
     @Override
     public int uron() {
-        return 35;
+        return new Random().nextInt(0, getDalnostStrelbi());
     }
 
     @Override
