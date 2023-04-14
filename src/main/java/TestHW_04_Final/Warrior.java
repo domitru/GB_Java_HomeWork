@@ -2,7 +2,7 @@ package TestHW_04_Final;
 
 import java.util.Random;
 
-public abstract class Warrior<T extends HolodnoeOruzhie, S extends Zashita> extends Chelovek{
+public abstract class Warrior<T extends UronOtOrugia, S extends Zashita> extends Chelovek{
     protected static Random random = new Random();
     private T uron;
     private S zashita;
@@ -23,11 +23,11 @@ public abstract class Warrior<T extends HolodnoeOruzhie, S extends Zashita> exte
 
     public int harm() {
         boolean isHit = random.nextBoolean();
-        int damageUron = 0;
+        int damage = 0;
         if (isHit) {
-            damageUron = random.nextInt(uron.uron()+1);
+            damage = random.nextInt(uron.uron()+1);
         }
-        return damageUron;
+        return damage;
     }
 }
 

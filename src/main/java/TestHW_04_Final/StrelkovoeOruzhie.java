@@ -1,7 +1,7 @@
 package TestHW_04_Final;
 
 
-public abstract class StrelkovoeOruzhie implements UronOtOrugia {
+public abstract class StrelkovoeOruzhie<T extends Distanzia> implements UronOtOrugia {
     public abstract String vidStrelkovoeOruzhia();
     public  int dalnostStrelbi;
 
@@ -10,6 +10,7 @@ public abstract class StrelkovoeOruzhie implements UronOtOrugia {
     }
 
     public int getDalnostStrelbi() {
+
         return dalnostStrelbi;
     }
 

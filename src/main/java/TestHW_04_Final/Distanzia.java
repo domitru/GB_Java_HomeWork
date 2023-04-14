@@ -13,7 +13,7 @@ public abstract class Distanzia implements UronOtOrugia{
 
     @Override
     public String toString() {
-        return String.format("Дистанция: %d Урон: %d ",distance,uron());
+        return String.format("Дистанция: %d Урон: %d ",distance, uron());
 
     }
 }

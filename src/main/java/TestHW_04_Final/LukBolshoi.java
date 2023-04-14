@@ -13,6 +13,7 @@ public class LukBolshoi extends StrelkovoeOruzhie {
     }
     @Override
     public int uron() {
+
         return new Random().nextInt(0, getDalnostStrelbi());
     }
 
