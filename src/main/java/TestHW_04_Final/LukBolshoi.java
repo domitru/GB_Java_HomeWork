@@ -3,8 +3,8 @@ package TestHW_04_Final;
 import java.util.Random;
 
 public class LukBolshoi extends StrelkovoeOruzhie {
-    public LukBolshoi(int dalnostStrelbi) {
-        super(dalnostStrelbi);
+    public LukBolshoi(int distance) {
+        super(distance);
     }
 
     @Override
@@ -14,7 +14,7 @@ public class LukBolshoi extends StrelkovoeOruzhie {
     @Override
     public int uron() {
 
-        return new Random().nextInt(0, getDalnostStrelbi());
+        return new Random().nextInt(0, getDistance());
     }
 
     @Override

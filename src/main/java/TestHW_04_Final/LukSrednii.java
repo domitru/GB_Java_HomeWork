@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class LukSrednii extends StrelkovoeOruzhie{
 
-    public LukSrednii(int dalnostStrelbi) {
-        super(dalnostStrelbi);
+    public LukSrednii(int distance) {
+        super(distance);
     }
 
     @Override
@@ -15,13 +15,10 @@ public class LukSrednii extends StrelkovoeOruzhie{
 
     @Override
     public int uron() {
-        return new Random().nextInt(0, getDalnostStrelbi());
+        return new Random().nextInt(0, getDistance());
     }
 
-    @Override
-    public int getDalnostStrelbi() {
-        return dalnostStrelbi;
-    }
+
 
     @Override
     public String toString() {

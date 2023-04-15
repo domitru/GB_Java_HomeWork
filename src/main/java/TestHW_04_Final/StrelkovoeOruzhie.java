@@ -1,22 +1,23 @@
 package TestHW_04_Final;
 
 
-public abstract class StrelkovoeOruzhie extends Distanzia implements Weapon {
-    public abstract String vidStrelkovoeOruzhia();
-    public  int dalnostStrelbi;
+public abstract class StrelkovoeOruzhie extends Distanzia {
+    public  String name;
 
-    public StrelkovoeOruzhie(int dalnostStrelbi) {
+    public StrelkovoeOruzhie(int distance) {
 
-        super(dalnostStrelbi);
+        super(distance);
     }
 
-    public int getDalnostStrelbi() {
+    public abstract String vidStrelkovoeOruzhia();
 
-        return dalnostStrelbi;
+    @Override
+    public int uron() {
+        return 20;
     }
 
     @Override
     public String toString() {
-        return String.format("Вид стрелкового оружия: %s Дальность стрельбы: %d Урон %d ",vidStrelkovoeOruzhia(),dalnostStrelbi,uron());
+        return String.format("Вид стрелкового оружия: %s  ",name + super.toString());
     }
 }

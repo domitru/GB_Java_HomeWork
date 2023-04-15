@@ -11,7 +11,8 @@ public class Spartanec extends Warrior<MechKorotkii, ShitDerevo>{
     @Override
     public String toString() {
         return "Спартанец : " +  " скорость "
-                + this.getSpeed() + super.toString();
+                + this.getSpeed() + super.toString()
+                + String.format(" with %s protection %d", zashita.getClass(), zashita.protect());
     }
 
     public int getSpeed() {
